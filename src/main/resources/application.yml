@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        native:
+#          search-locations: file:///Users/some-dir/some-file # file system
+          search-locations: classpath:/config                # classpath
+
+server:
+  port: 8071
